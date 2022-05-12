@@ -12,7 +12,6 @@ def on_button_pressed_ab():
     basic.show_icon(IconNames.HEART)
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 
-
 def on_button_pressed_b():
     for indeks2 in range(3):
         music.play_tone(262, music.beat(BeatFraction.QUARTER))
@@ -21,5 +20,10 @@ def on_button_pressed_b():
     basic.show_string("GO!")
     basic.show_icon(IconNames.HEART)
 input.on_button_pressed(Button.B, on_button_pressed_b)
+
+def on_gesture_shake():
+    basic.show_string("STOP!")
+    basic.show_icon(IconNames.HEART)
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 
 basic.show_icon(IconNames.HEART)

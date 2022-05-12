@@ -20,4 +20,8 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
     basic.showString("GO!")
     basic.showIcon(IconNames.Heart)
 })
+input.onGesture(Gesture.Shake, function on_gesture_shake() {
+    basic.showString("STOP!")
+    basic.showIcon(IconNames.Heart)
+})
 basic.showIcon(IconNames.Heart)
